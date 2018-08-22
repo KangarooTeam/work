@@ -11,4 +11,4 @@
     $functionName = isset($_GET['action']) ? ucfirst($_GET['action']) : 'index';
     echo $functionName.'<br />';
 
-    include_once '..controllers/'.$controllerName.'Controller.php';
+    include_once '../controllers/'.$controllerName.'Controller.php';
