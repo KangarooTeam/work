@@ -5,10 +5,11 @@
  * Date: 22.08.2018
  * Time: 20:03
  */
+    include_once ('../config/config.php');
+    include_once ('../library/mainFunctions.php');
+
     $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) : 'Index';
-    echo $controllerName.'<br />';
 
-    $functionName = isset($_GET['action']) ? ucfirst($_GET['action']) : 'index';
-    echo $functionName.'<br />';
+    $actionName = isset($_GET['action']) ? ucfirst($_GET['action']) : 'index';
 
-    include_once '../controllers/'.$controllerName.'Controller.php';
+    loadPage($controllerName, $actionName);
