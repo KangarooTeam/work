@@ -6,5 +6,8 @@
  * Time: 20:30
  */
 
+    //< константы для обрпщения к контроллерам
+
     define('PathPrefix', '../controllers/');
     define('PathPostfix', 'Controller.php');
+    //>
