@@ -12,4 +12,4 @@
     // опрнделяем фунецию
     $actionName = isset($_GET['action']) ? ucfirst($_GET['action']) : 'index';
 
-    loadPage($controllerName, $actionName);
+    loadPage($smarty, $controllerName, $actionName);

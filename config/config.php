@@ -18,11 +18,11 @@
 
     // пути к файлам шаблонов (*.tpl)
 
-    define('TemplatePrefix', "../views/($template)/"); // где находятся шаблоны
+    define('TemplatePrefix', "../views/$template/"); // где находятся шаблоны
     define('TemplatePostfix', ".tpl"); // чтобы не дописывать каждый раз формат
 
     // пути к файлам шаблонов в веб-пространстве
-    define('TemplateNamePath', "/templates/($template)/");
+    define('TemplateNamePath', "/templates/$template/");
     //<
 
     //инициализация шаблона Smarty
@@ -31,7 +31,7 @@
 
     $smarty->setTemplateDir(TemplatePrefix);
     $smarty->setCompileDir('../tmp/smarty/templates_c');
-    $smarty->setCaheDir('../tmp/smarty/cashe');
+    $smarty->setCacheDir('../tmp/smarty/cashe');
     $smarty->setConfigDir('../library/Smarty/configs');
 
     $smarty->assign('templateWebPath', TemplateNamePath);
