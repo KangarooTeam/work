@@ -10,6 +10,8 @@
     // определяем контроллер
     $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) : 'Index';
     // опрнделяем фунецию
+    //d($controllerName);
+
     $actionName = isset($_GET['action']) ? ucfirst($_GET['action']) : 'index';
 
     loadPage($smarty, $controllerName, $actionName);

@@ -14,3 +14,12 @@
         TemplatePrefix . $templateName .= TemplatePostfix;
         $smarty->display( $templateName);
     }
+
+    function d($value=Null, $die=1) {
+
+        echo 'Debag: <br /><pre>';
+        print_r($value);
+        echo '</pre>';
+
+        if($die) die;
+    }
